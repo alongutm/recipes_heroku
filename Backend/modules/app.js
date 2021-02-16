@@ -39,7 +39,6 @@ app.use(cookieParser());
 
 app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-form-urlencoded
 app.use(express.static(path.join(__dirname, "public"))); //To serve static files such as images, CSS files, and JavaScript files
-
 var port = process.env.PORT || "3000"; // print requests logs
 //app.use(morgan(":method :url :status :response-time ms"));
 //app.use(bodyParser.json());// parse application/json
